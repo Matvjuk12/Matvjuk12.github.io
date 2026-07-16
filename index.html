@@ -92,7 +92,6 @@
             border-color: #58a6ff;
         }
         
-        /* Сетка для картинок GitHub Activity */
         .github-grid { 
             display: flex; 
             flex-wrap: wrap; 
@@ -105,8 +104,6 @@
             height: auto; 
             border-radius: 6px;
         }
-        
-        /* Стилизация контактов */
         .links-container {
             display: flex;
             flex-wrap: wrap;
@@ -133,7 +130,6 @@
             border-color: #58a6ff; 
         }
         
-        /* Цвета иконок при наведении */
         .github-btn:hover i { color: #f0f6fc; }
         .telegram-btn:hover i { color: #2ea4ff; }
         .email-btn:hover i { color: #ff6b6b; }
@@ -168,57 +164,16 @@
 
     <section>
         <h2>Skills & Technologies</h2>
-        <div class="skills-grid">
-            <div class="skills-column">
-                <h3>Computer Science & Tech</h3>
-                <div class="skills-list">
-                    <span>C++</span> 
-                    <span>Python</span> 
-                    <span>ASM</span> 
-                    <span>LLVM</span> 
-                    <span>Algorithms & Data Structures</span>
-                    <span>OpenCV</span> 
-                    <span>Webots</span> 
-                    <span>KiCad</span> 
-                    <span>Git & GitHub</span>
-                </div>
-            </div>
-
-            <div class="skills-column">
-                <h3>Sciences & Languages</h3>
-                <div class="skills-list">
-                    <span>Mathematics</span> 
-                    <span>Physics</span> 
-                    <span>Astronomy</span> 
-                    <span>Economics</span>
-                    <span>Robotics</span> 
-                    <span>English</span>
-                </div>
-            </div>
+        
+        <p style="color: #8b949e; font-size: 0.85rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.8px; font-weight: bold;">Computer Science & Tech</p>
+        <div class="skills" style="margin-bottom: 1.5rem;">
+            <span>C++</span> <span>Python</span> <span>ASM</span> <span>LLVM</span> <span>Algorithms & Data Structures</span> <span>OpenCV</span> <span>Webots</span> <span>KiCad</span> <span>Git & GitHub</span>
         </div>
 
-        <style>
-            .skills-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 20px;
-                margin-top: 15px;
-            }
-            .skills-column h3 {
-                color: #8b949e; 
-                font-size: 0.85rem; 
-                margin-top: 0;
-                margin-bottom: 0.8rem; 
-                text-transform: uppercase; 
-                letter-spacing: 0.8px;
-                border: none;
-                padding: 0;
-            }
-            .skills-list {
-                display: flex;
-                flex-wrap: wrap;
-            }
-        </style>
+        <p style="color: #8b949e; font-size: 0.85rem; margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.8px; font-weight: bold;">Sciences & Languages</p>
+        <div class="skills">
+            <span>Mathematics</span> <span>Physics</span> <span>Astronomy</span> <span>Economics</span> <span>Robotics</span> <span>Computer Science</span> <span>English</span>
+        </div>
     </section>
 
     <section>
