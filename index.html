@@ -3,20 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matvey Zhukovsky — Portfolio</title>
+    
+    <!-- SEO & Search Engine Tags -->
+    <title>Matvey Zhukovsky | Software Developer & Physicist Portfolio</title>
+    <meta name="description" content="Portfolio of Matvey Zhukovsky (Matvjuk12) — competitive programmer, physicist, and software developer from Lesosibirsk. Built projects, olympiad achievements, and custom language design.">
+    <meta name="keywords" content="Matvjuk12, Matvey Zhukovsky, Матвей Жуковский, Лесосибирск, Competitive Programming, РобоКап, Физтех, GitHub, C++, Python">
+    <meta name="author" content="Matvey Zhukovsky">
+    
+    <!-- Open Graph Tags (Для красивых превью ссылок в Telegram / VK) -->
+    <meta property="og:title" content="Matvey Zhukovsky | Portfolio">
+    <meta property="og:description" content="Competitive programmer, physicist, and roboticist from Lesosibirsk. Check out my projects and achievements!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.io">
+
+    <!-- Подключение официальных иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; margin: 0; padding: 0; background: #0d1117; color: #c9d1d9; }
-        header { background: #161b22; color: #ffffff; text-align: center; padding: 3rem 1rem; border-bottom: 1px solid #30363d; }
-        header h1 { margin: 0; font-size: 2.5rem; color: #58a6ff; }
-        header p { margin: 0.5rem 0 0; color: #8b949e; font-size: 1.2rem; }
-        .container { max-width: 850px; margin: 2rem auto; padding: 0 1rem; }
-        section { background: #161b22; padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 6px; border: 1px solid #30363d; }
-        h2 { color: #58a6ff; border-bottom: 1px solid #30363d; padding-bottom: 0.3rem; margin-top: 0; }
-        .skills span { background: #21262d; color: #58a6ff; padding: 0.4rem 0.8rem; margin: 0.2rem; border-radius: 6px; display: inline-block; font-size: 0.9rem; border: 1px solid #30363d; }
-        .links a { display: inline-block; margin-right: 1.5rem; color: #58a6ff; text-decoration: none; font-weight: bold; }
-        .links a:hover { text-decoration: underline; }
-        .stats-container { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1rem; justify-content: center; }
-        .stats-container img { max-width: 100%; height: auto; }
+        /* Глобальные настройки */
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+            background: #0d1117; 
+            color: #c9d1d9; 
+        }
+        
+        /* Шапка сайта */
+        header { 
+            background: #161b22; 
+            color: #ffffff; 
+            text-align: center; 
+            padding: 3rem 1rem; 
+            border-bottom: 1px solid #30363d; 
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 2.5rem; 
+            color: #58a6ff; 
+            letter-spacing: -0.5px;
+        }
+        header p { 
+            margin: 0.5rem 0 0; 
+            color: #8b949e; 
+            font-size: 1.2rem; 
+        }
+        
+        /* Контейнер */
+        .container { 
+            max-width: 850px; 
+            margin: 2rem auto; 
+            padding: 0 1rem; 
+        }
+        
+        /* Секции */
+        section { 
+            background: #161b22; 
+            padding: 1.5rem; 
+            margin-bottom: 1.5rem; 
+            border-radius: 6px; 
+            border: 1px solid #30363d; 
+        }
+        h2 { 
+            color: #58a6ff; 
+            border-bottom: 1px solid #30363d; 
+            padding-bottom: 0.3rem; 
+            margin-top: 0; 
+        }
+        
+        /* Списки достижений */
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Стилизация тегов технологий (Skills) с анимацией */
+        .skills span { 
+            background: #21262d; 
+            color: #58a6ff; 
+            padding: 0.4rem 0.8rem; 
+            margin: 0.3rem 0.2rem; 
+            border-radius: 6px; 
+            display: inline-block; 
+            font-size: 0.9rem; 
+            border: 1px solid #30363d; 
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            cursor: default;
+        }
+        .skills span:hover {
+            background: #58a6ff;
+            color: #0d1117;
+            transform: scale(1.05);
+            border-color: #58a6ff;
+        }
+        
+        /* Сетка для картинок GitHub Activity */
+        .github-grid { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 15px; 
+            margin-top: 15px; 
+            align-items: stretch;
+        }
+        .github-grid img { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 6px;
+        }
+        
+        /* Стилизация контактов */
+        .links-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #21262d; 
+            border: 1px solid #30363d;
+            transition: all 0.2s ease-in-out;
+        }
+        .contact-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            border-color: #58a6ff; 
+        }
+        
+        /* Цвета иконок при наведении */
+        .github-btn:hover i { color: #f0f6fc; }
+        .telegram-btn:hover i { color: #2ea4ff; }
+        .email-btn:hover i { color: #ff6b6b; }
     </style>
 </head>
 <body>
@@ -27,9 +156,10 @@
 </header>
 
 <div class="container">
+    
     <section>
         <h2>About Me</h2>
-        <p>Hello! I am Matvey, an active competitive programmer, developer, physicist, roboticist, mathematician, economist and astronomer known as <strong>Matvjuk12</strong> on GitHub. I specialize in solving algorithmic problems, building software projects, modeling physical and economic systems, and exploring data in math, robotics, and astronomy.</p>
+        <p>Hello! I am Matvey, an active competitive programmer, developer, physicist, roboticist, mathematician, economist, and astronomer known as <strong>Matvjuk12</strong> on GitHub. I specialize in solving algorithmic problems, building software projects, modeling physical and economic systems, and exploring data in math, robotics, and astronomy.</p>
     </section>
 
     <section>
@@ -48,72 +178,38 @@
     <section>
         <h2>Skills & Technologies</h2>
         <div class="skills">
-            <span>C++</span> <span>Python</span> <span>Git & GitHub</span> <span>Algorithms</span> <span>Data Structures</span>
+            <span>C++</span> 
+            <span>Python</span> 
+            <span>Git & GitHub</span> 
+            <span>Algorithms</span> 
+            <span>Data Structures</span>
         </div>
     </section>
 
     <section>
         <h2>GitHub Activity</h2>
         <p>My automatically updated repository statistics:</p>
-        <div class="github-activity-section">
-            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 15px;">
-                <img src="https://github-flex.vercel.app/api/stats?username=Matvjuk12&theme=radical" alt="Matvjuk12 GitHub Stats" style="max-width: 100%; height: auto;">
-                <img src="https://github-flex.vercel.app/api/languages?username=Matvjuk12&theme=radical" alt="Matvjuk12 Top Languages" style="max-width: 100%; height: auto;">
-                <img src="https://github-flex.vercel.app/api/repo?username=Matvjuk12&repo=competitive%2Dprogramming&theme=radical" alt="Competitive Programming Repo Stats" style="max-width: 100%; height: auto;">
-            </div>
+        <div class="github-grid">
+            <img src="https://github-flex.vercel.app/api/stats?username=Matvjuk12&theme=radical" alt="Matvjuk12 GitHub Stats">
+            <img src="https://github-flex.vercel.app/api/languages?username=Matvjuk12&theme=radical" alt="Matvjuk12 Top Languages">
+            <img src="https://github-flex.vercel.app/api/repo?username=Matvjuk12&repo=competitive%2Dprogramming&theme=radical" alt="Competitive Programming Repo Stats">
         </div>
     </section>
-<link rel="stylesheet" href="https://cloudflare.com">
 
-<section class="contacts-section">
-    <h2>Contacts & Links</h2>
-    <div class="links-container">
-        <a href="https://github.com/Matvjuk12" target="_blank" class="contact-link github-btn">
-            <i class="fab fa-github"></i> GitHub Profile
-        </a>
-        <a href="https://t.me/ZhukovskySiberia" target="_blank" class="contact-link telegram-btn">
-            <i class="fab fa-telegram"></i> Telegram
-        </a>
-        <a href="mailto:matvjuk12@gmail.com" class="contact-link email-btn">
-            <i class="fas fa-envelope"></i> Email
-        </a>
-    </div>
-
-    <style>
-        .contacts-section {
-            margin-top: 30px;
-        }
-        .links-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 15px;
-        }
-        .contact-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 10px 18px;
-            border-radius: 6px;
-            font-size: 14px;
-            font-weight: 500;
-            text-decoration: none;
-            color: #ffffff;
-            background-color: #1f242c; 
-            border: 1px solid #30363d;
-            transition: all 0.2s ease-in-out;
-        }
-        .contact-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            border-color: #58a6ff; 
-        }
-        .github-btn:hover i { color: #f0f6fc; }
-        .telegram-btn:hover i { color: #2ea4ff; }
-        .email-btn:hover i { color: #ff6b6b; }
-        .phone-btn:hover i { color: #51cf66; }
-    </style>
-</section>
+    <section>
+        <h2>Contacts & Links</h2>
+        <div class="links-container">
+            <a href="https://github.com/Matvjuk12" target="_blank" class="contact-link github-btn">
+                <i class="fab fa-github"></i> GitHub Profile
+            </a>
+            <a href="https://t.me/ZhukovskySiberia" target="_blank" class="contact-link telegram-btn">
+                <i class="fab fa-telegram"></i> Telegram
+            </a>
+            <a href="mailto:matvjuk12@gmail.com" class="contact-link email-btn">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+        </div>
+    </section>
 
 </div>
 
