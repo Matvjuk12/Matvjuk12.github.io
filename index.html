@@ -14,10 +14,10 @@
     <meta property="og:title" content="Matvey Zhukovsky | Portfolio">
     <meta property="og:description" content="Competitive programmer, physicist, and roboticist from Lesosibirsk. Check out my projects and achievements!">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://github.io">
+    <meta property="og:url" content="https://matvjuk12.github.io/">
 
     <!-- Подключение официальных иконок Font Awesome -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/font-awesome.min.css">
 
     <style>
         /* Глобальные настройки */
@@ -177,13 +177,57 @@
 
     <section>
         <h2>Skills & Technologies</h2>
-        <div class="skills">
-            <span>C++</span> 
-            <span>Python</span> 
-            <span>Git & GitHub</span> 
-            <span>Algorithms</span> 
-            <span>Data Structures</span>
+        <div class="skills-grid">
+            <div class="skills-column">
+                <h3>Computer Science & Tech</h3>
+                <div class="skills-list">
+                    <span>C++</span> 
+                    <span>Python</span> 
+                    <span>ASM</span> 
+                    <span>LLVM</span> 
+                    <span>Algorithms & Data Structures</span>
+                    <span>OpenCV</span> 
+                    <span>Webots</span> 
+                    <span>KiCad</span> 
+                    <span>Git & GitHub</span>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3>Sciences & Languages</h3>
+                <div class="skills-list">
+                    <span>Mathematics</span> 
+                    <span>Physics</span> 
+                    <span>Astronomy</span> 
+                    <span>Economics</span>
+                    <span>Robotics</span> 
+                    <span>English</span>
+                </div>
+            </div>
         </div>
+
+        <style>
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                margin-top: 15px;
+            }
+            .skills-column h3 {
+                color: #8b949e; 
+                font-size: 0.85rem; 
+                margin-top: 0;
+                margin-bottom: 0.8rem; 
+                text-transform: uppercase; 
+                letter-spacing: 0.8px;
+                border: none;
+                padding: 0;
+            }
+            .skills-list {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        </style>
     </section>
 
     <section>
